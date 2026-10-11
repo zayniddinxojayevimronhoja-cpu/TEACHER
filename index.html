@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'zbekiston Tarixi - Toshpo'latova Dilfuza</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f1f5f9;
+            color: #334155;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: #1e3a8a;
+            color: #ffffff;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #f59e0b;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #f59e0b;
+        }
+
+        /* Banner */
+        .hero {
+            background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(30, 58, 138, 0.85)), 
+                        url('https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: #ffffff;
+            text-align: center;
+            padding: 60px 20px 90px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        /* Ustoz bo'limi */
+        .teacher-box {
+            background: #ffffff;
+            border-top: 5px solid #f59e0b;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: -40px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .teacher-box h2 {
+            color: #1e3a8a;
+            margin: 10px 0;
+            font-size: 26px;
+        }
+
+        .badge {
+            background: #e0e7ff;
+            color: #1e3a8a;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .teacher-desc {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #475569;
+        }
+
+        /* Bo'limlar va Kartalar */
+        .section {
+            padding: 50px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 30px;
+            font-size: 28px;
+            position: relative;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .card-img {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-body {
+            padding: 18px;
+        }
+
+        .card-body h3 {
+            color: #1e3a8a;
+            font-size: 19px;
+            margin-bottom: 4px;
+        }
+
+        .sub-text {
+            color: #f59e0b;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .card-body p {
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        /* Footer */
+        footer {
+            background: #1e3a8a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigatsiya -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">Tarixiy Meros</div>
+            <ul class="nav-links">
+                <li><a href="#ustoz">Ustozimizga</a></li>
+                <li><a href="#siymolar">Buyuk Siymolar</a></li>
+                <li><a href="#obidalar">Tarixiy Obidalar</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Asosiy Banner -->
+    <section class="hero">
+        <h1>O'zbekiston Tarixi va Buyuk Merosi</h1>
+        <p>Ajdodlarimiz jasorati, ilm-fani va boy ma'naviy xazinasi</p>
+    </section>
+
+    <!-- Ustozga Bag'ishlov -->
+    <div id="ustoz" class="container">
+        <div class="teacher-box">
+            <span class="badge">Loyiha Rahbari va Ustoz</span>
+            <h2>Toshpo'latova Dilfuza</h2>
+            <p class="teacher-desc">
+                Bizga tarix fanining sir-sinoatlarini chuqur o'rgatib, ajdodlarimiz xazinasi va boy o'tmishimizga bo'lgan qiziqishimizni oshirganingiz uchun sizga samimiy minnatdorchilik bildiramiz!
+            </p>
+        </div>
+    </div>
+
+    <!-- Buyuk Siymolar Bo'limi -->
+    <section id="siymolar" class="container section">
+        <h2 class="section-title">Tariximizdagi Buyuk Siymolar</h2>
+        <div class="grid">
+            
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="card-body">
+                    <h3>Amir Temur</h3>
+                    <p class="sub-text">Sohibqiron, Buyuk Sarkarda</p>
+                    <p>Markazlashgan qudratli temuriylar davlatiga asos solgan va ilm-fan, me'morchilik va madaniyat homiysi bo'lgan buyuk davlat arbobi.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="card-body">
+                    <h3>Alisher Navoiy</h3>
+                    <p class="sub-text">G'azal mulkining sultoni</p>
+                    <p>Turkiy tilni jahon miqyosiga olib chiqqan ulug' shoir, mutafakkir va davlat arbobi. O'zining mashhur "Xamsa" asari muallifi.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="card-body">
+                    <h3>Mirzo Ulug'bek</h3>
+                    <p class="sub-text">Astronom va Hukmdor</p>
+                    <p>Samarqandda ulkan observatoriya barpo etgan va 1018 ta yulduzning aniq xaritasini tuzib, jahon astronomiyasiga hissa qo'shgan olim.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="card-body">
+                    <h3>Zahiriddin Bobur</h3>
+                    <p class="sub-text">Shoir va Sarkarda</p>
+                    <p>Hindistonda Boburiylar saltanatiga asos solgan, dunyoga mashhur "Boburnoma" tarixiy va adabiy shoh asari muallifi.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tarixiy Obidalar Bo'limi -->
+    <section id="obidalar" class="container section">
+        <h2 class="section-title">Mashhur Tarixiy Obidalar</h2>
+        <div class="grid">
+            
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="card-body">
+                    <h3>Registon Maydoni</h3>
+                    <p class="sub-text">Samarqand</p>
+                    <p>Uchta ulkan va ko'rkam madrasadan (Ulug'bek, Sherdor, Tillakori) iborat bo'lgan sharqona me'morchilik durdonasi.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="card-body">
+                    <h3>Kalon Minorasi</h3>
+                    <p class="sub-text">Buxoro</p>
+                    <p>1127-yilda Qoraxoniylar tomonidan qurilgan, balandligi 46.5 metr bo'lgan Buxoroning vizit kartochkasi.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="card-body">
+                    <h3>Ichan Qal'a</h3>
+                    <p class="sub-text">Xiva</p>
+                    <p>Ochiq osmon ostidagi shahar-muzey. YUNESKO Butunjahon merosi ro'yxatiga kiritilgan birinchi O'rta Osiyo obidasi.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="card-body">
+                    <h3>Go'ri Amir Maqbarasi</h3>
+                    <p class="sub-text">Samarqand</p>
+                    <p>Amir Temur va uning avlodlari dafn etilgan, o'zining noyob feruza gumbazi bilan dunyoga tanilgan tarixiy majmua.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Tarix fani bo'yicha maxsus loyiha &copy; 2026 | Ustoz: Toshpo'latova Dilfuza</p>
+    </footer>
+
+</body>
+</html>
